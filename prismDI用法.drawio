@@ -1,0 +1,204 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.2.2 Chrome/134.0.6998.178 Electron/35.1.2 Safari/537.36" version="26.2.2">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="2507" dy="989" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--0" value="IContainerProvider" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="20" y="100" width="230" height="138" as="geometry">
+            <mxRectangle x="230" y="140" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--1" value="Resolve" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="zkfFHV4jXpPFQw0GAbJ--0" vertex="1">
+          <mxGeometry y="26" width="230" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--2" value="IScopedProvider CreateScope();" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="zkfFHV4jXpPFQw0GAbJ--0" vertex="1">
+          <mxGeometry y="52" width="230" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--3" value="IScopedProvider? CurrentScope { get; }" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="zkfFHV4jXpPFQw0GAbJ--0" vertex="1">
+          <mxGeometry y="78" width="230" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--4" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="zkfFHV4jXpPFQw0GAbJ--0" vertex="1">
+          <mxGeometry y="104" width="230" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--6" value="IContainerExtension" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="170" y="370" width="160" height="138" as="geometry">
+            <mxRectangle x="130" y="380" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--7" value="Student Number" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="zkfFHV4jXpPFQw0GAbJ--6" vertex="1">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--8" value="Average Mark" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="zkfFHV4jXpPFQw0GAbJ--6" vertex="1">
+          <mxGeometry y="52" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--9" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="zkfFHV4jXpPFQw0GAbJ--6" vertex="1">
+          <mxGeometry y="78" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--10" value="Is Eligible To Enroll" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=4" parent="zkfFHV4jXpPFQw0GAbJ--6" vertex="1">
+          <mxGeometry y="86" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--11" value="Get Seminars Taken" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="zkfFHV4jXpPFQw0GAbJ--6" vertex="1">
+          <mxGeometry y="112" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--12" value="" style="endArrow=block;endSize=10;endFill=0;shadow=0;strokeWidth=1;rounded=0;curved=0;edgeStyle=elbowEdgeStyle;elbow=vertical;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="zkfFHV4jXpPFQw0GAbJ--6" target="zkfFHV4jXpPFQw0GAbJ--0" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="200" y="203" as="sourcePoint" />
+            <mxPoint x="200" y="203" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--17" value="IContainerRegistry" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="460" y="90" width="160" height="216" as="geometry">
+            <mxRectangle x="550" y="140" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--18" value="IContainerRegistry RegisterInstance" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="zkfFHV4jXpPFQw0GAbJ--17" vertex="1">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--19" value=" IContainerRegistry Register" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="zkfFHV4jXpPFQw0GAbJ--17" vertex="1">
+          <mxGeometry y="52" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--20" value="    IContainerRegistry RegisterScoped(Type from, Type to);" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="zkfFHV4jXpPFQw0GAbJ--17" vertex="1">
+          <mxGeometry y="78" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--23" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="zkfFHV4jXpPFQw0GAbJ--17" vertex="1">
+          <mxGeometry y="104" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="sX24ufkYhEEFfUaHDxLW-0" value="IContainerProviderExtensions" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-170" y="150" width="140" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="sX24ufkYhEEFfUaHDxLW-1" value="Resolve&amp;lt;T&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="sX24ufkYhEEFfUaHDxLW-0">
+          <mxGeometry y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sX24ufkYhEEFfUaHDxLW-2" value="&amp;nbsp;IsRegistered&amp;lt;T&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="sX24ufkYhEEFfUaHDxLW-0">
+          <mxGeometry y="60" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sX24ufkYhEEFfUaHDxLW-3" value="bool IsRegistered" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="sX24ufkYhEEFfUaHDxLW-0">
+          <mxGeometry y="90" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sX24ufkYhEEFfUaHDxLW-4" value="&amp;nbsp;IContainerRegistryExtensions" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="700" y="100" width="140" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="sX24ufkYhEEFfUaHDxLW-5" value="&lt;div&gt;&amp;nbsp;IContainerRegistry TryRegister(&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; this IContainerRegistry containerRegistry,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; Type from,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; Type to)&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="sX24ufkYhEEFfUaHDxLW-4">
+          <mxGeometry y="30" width="140" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="sX24ufkYhEEFfUaHDxLW-6" value="IContainerRegistry RegisterSingleton" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="sX24ufkYhEEFfUaHDxLW-4">
+          <mxGeometry y="200" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="sX24ufkYhEEFfUaHDxLW-7" value="Item 3" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="sX24ufkYhEEFfUaHDxLW-4">
+          <mxGeometry y="340" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sX24ufkYhEEFfUaHDxLW-8" value="" style="endArrow=block;endSize=10;endFill=0;shadow=0;strokeWidth=1;rounded=0;curved=0;edgeStyle=elbowEdgeStyle;elbow=vertical;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="zkfFHV4jXpPFQw0GAbJ--6" target="zkfFHV4jXpPFQw0GAbJ--17">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="210" y="370" as="sourcePoint" />
+            <mxPoint x="580" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sX24ufkYhEEFfUaHDxLW-9" value="一个是负责对Provider做提供&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;所以这里是provider的变量&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry y="60" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sX24ufkYhEEFfUaHDxLW-10" value="一个是负责对registry做提供&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;所以这里其实是servicecollection存储&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="510" y="50" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sX24ufkYhEEFfUaHDxLW-15" value="Prism.DI.Wpf的&amp;nbsp;PrismApplication : PrismApplicationBase类" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="430" y="810" width="250" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="sX24ufkYhEEFfUaHDxLW-16" value="&lt;div&gt;&amp;nbsp; protected override IContainerExtension CreateContainerExtension()&lt;/div&gt;&lt;div&gt;&amp;nbsp; {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; return new DIContainerExtension();&lt;/div&gt;&lt;div&gt;&amp;nbsp; }&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="sX24ufkYhEEFfUaHDxLW-15">
+          <mxGeometry y="30" width="250" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sX24ufkYhEEFfUaHDxLW-17" value="Item 2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="sX24ufkYhEEFfUaHDxLW-15">
+          <mxGeometry y="110" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sX24ufkYhEEFfUaHDxLW-18" value="Item 3" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="sX24ufkYhEEFfUaHDxLW-15">
+          <mxGeometry y="140" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sX24ufkYhEEFfUaHDxLW-23" value="Prism.wpf的PrismApplicationBase" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-120" y="760" width="410" height="464" as="geometry">
+            <mxRectangle x="130" y="380" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sX24ufkYhEEFfUaHDxLW-24" value=" IContainerExtension _containerExtension;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sX24ufkYhEEFfUaHDxLW-23">
+          <mxGeometry y="26" width="410" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sX24ufkYhEEFfUaHDxLW-25" value=" public IContainerProvider Container =&gt; _containerExtension;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="sX24ufkYhEEFfUaHDxLW-23">
+          <mxGeometry y="52" width="410" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sX24ufkYhEEFfUaHDxLW-26" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="sX24ufkYhEEFfUaHDxLW-23">
+          <mxGeometry y="78" width="410" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="sX24ufkYhEEFfUaHDxLW-27" value=" void InitializeInternal()&#xa; {&#xa;     ConfigureViewModelLocator();&#xa;     Initialize();&#xa;     OnInitialized();&#xa; }" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=4" vertex="1" parent="sX24ufkYhEEFfUaHDxLW-23">
+          <mxGeometry y="86" width="410" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="sX24ufkYhEEFfUaHDxLW-28" value="  ContainerLocator.SetContainerExtension(CreateContainerExtension());&#xa;  _containerExtension = ContainerLocator.Current;&#xa; RegisterRequiredTypes(_containerExtension);&#xa; RegisterTypes(_containerExtension);" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sX24ufkYhEEFfUaHDxLW-23">
+          <mxGeometry y="220" width="410" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="sX24ufkYhEEFfUaHDxLW-29" value=" void InitializeInternal()&#xa; {&#xa;     ConfigureViewModelLocator();&#xa;     Initialize();&#xa;     OnInitialized();&#xa; }" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=4" vertex="1" parent="sX24ufkYhEEFfUaHDxLW-23">
+          <mxGeometry y="330" width="410" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="sX24ufkYhEEFfUaHDxLW-30" value="" style="endArrow=block;endSize=10;endFill=0;shadow=0;strokeWidth=1;rounded=0;curved=0;edgeStyle=elbowEdgeStyle;elbow=vertical;entryX=1.002;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.004;exitY=0.65;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sX24ufkYhEEFfUaHDxLW-16" target="sX24ufkYhEEFfUaHDxLW-27">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="260" y="380" as="sourcePoint" />
+            <mxPoint x="145" y="248" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sX24ufkYhEEFfUaHDxLW-31" value="具体真正使用时---使用&lt;span style=&quot;text-align: left;&quot;&gt;containerRegistry对象注入&lt;/span&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="840" y="720" width="250" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="sX24ufkYhEEFfUaHDxLW-32" value="&lt;div&gt;&amp;nbsp; protected override void RegisterTypes(IContainerRegistry containerRegistry)&lt;/div&gt;&lt;div&gt;&amp;nbsp; {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; containerRegistry.Register&amp;lt;MyDialogService, MyDialogService&amp;gt;();&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="sX24ufkYhEEFfUaHDxLW-31">
+          <mxGeometry y="30" width="250" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="sX24ufkYhEEFfUaHDxLW-33" value="Item 2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="sX24ufkYhEEFfUaHDxLW-31">
+          <mxGeometry y="220" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sX24ufkYhEEFfUaHDxLW-34" value="Item 3" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="sX24ufkYhEEFfUaHDxLW-31">
+          <mxGeometry y="250" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sX24ufkYhEEFfUaHDxLW-35" value="" style="endArrow=block;endSize=10;endFill=0;shadow=0;strokeWidth=1;rounded=0;curved=0;edgeStyle=elbowEdgeStyle;elbow=vertical;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.012;exitY=0.625;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sX24ufkYhEEFfUaHDxLW-32" target="sX24ufkYhEEFfUaHDxLW-16">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="441" y="902" as="sourcePoint" />
+            <mxPoint x="301" y="856" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sX24ufkYhEEFfUaHDxLW-36" value="一个对象继承2个接口， 根据需要的时候自动适配使用。 需要register注入时就注入。 需要provider反向解析resolver时就解析。" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="70" y="540" width="430" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sX24ufkYhEEFfUaHDxLW-37" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;在使用方式中，没有特别明显的把containerregistry的seviceCollection&amp;nbsp; 进行&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: Consolas; font-size: 10.5pt; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-weight: normal;&quot;&gt;CreateServiceProvider成provider的操作&lt;/span&gt;&lt;/h1&gt;&lt;div&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: Consolas; font-size: 10.5pt; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-weight: normal;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="740" y="1029" width="550" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="sX24ufkYhEEFfUaHDxLW-38" value="想在此框架下，实现微软DI--其实首先要类似HOSTBuilder的方式，做一个封装作为Container。&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2.Container要能支持Resolve。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;从这个角度。其实也是一个对象，即能解析也能注册。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;这里直接写2个不同的变量，也是可以的。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;问题在与，builder的时机。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;——————从prism的代码来看，PrismApplicationBase的初始化里面，可以看到优先是完成所有的register，再做Resolve。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;这里可以放一个builder。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;也可以不去管。按照约定执行。就当所有的都已经注入。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;但是因为&lt;span style=&quot;text-align: left; text-wrap-mode: nowrap; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;ContainerLocator.SetContainerExtension(CreateContainerExtension());&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;text-align: left; text-wrap-mode: nowrap; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;这里又搞了个Locator饶了一层，但是还好，放入的是整个对象。 后面使用也主要是resovle解析， 个别情况是强转scope对象。&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;text-align: left; text-wrap-mode: nowrap; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;text-align: left; text-wrap-mode: nowrap; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;而且实际去看，感觉每个DI的&lt;/span&gt;&lt;span style=&quot;background-color: transparent; text-wrap-mode: nowrap;&quot;&gt;IContainer还是各自功能不同。&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; text-wrap-mode: nowrap;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; text-wrap-mode: nowrap;&quot;&gt;这里不需要新建1个DIIContainer、直接在类内部实现servicecollection和servicerprovider的2个共同的能力&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; text-wrap-mode: nowrap;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; text-wrap-mode: nowrap;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; text-wrap-mode: nowrap;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; text-wrap-mode: nowrap;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;但是也又很烦躁的用法--&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;开放了对方通过&lt;/span&gt;&lt;span style=&quot;background-color: transparent; text-wrap-mode: nowrap;&quot;&gt;PrismIocExtensions 得到对象， 然后直接用对象做register的方法--这个就很搞&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; text-wrap-mode: nowrap;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; text-wrap-mode: nowrap;&quot;&gt;因为什么时候builder是重点。--除非这里使用scope&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="320" y="1400" width="330" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sX24ufkYhEEFfUaHDxLW-39" value="写u人方式，就是分为root和current 2种层次。 这样未来可以进一步改造。&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; //IServiceProvider 作为 IServiceProvider&amp;nbsp; 来处理&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; //个IServiceCollection对象本质上就是一个元素类型为ServiceDescriptor的列表&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="780" y="1530" width="310" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="sX24ufkYhEEFfUaHDxLW-40" value="ContainerLocator" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-70" y="1340" width="220" height="510" as="geometry" />
+        </mxCell>
+        <mxCell id="sX24ufkYhEEFfUaHDxLW-41" value="&lt;div&gt;&amp;nbsp; &amp;nbsp; public static void SetContainerExtension(IContainerExtension container)&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; ContainerLocator._current = container;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; } 这里进来的是整个对象&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="sX24ufkYhEEFfUaHDxLW-40">
+          <mxGeometry y="30" width="220" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="sX24ufkYhEEFfUaHDxLW-42" value="&lt;div&gt;&amp;nbsp; &amp;nbsp; public static IContainerProvider Container =&amp;gt; (IContainerProvider) ContainerLocator.Current;&lt;/div&gt;&lt;div&gt;这里使用时--是单一的provider对象&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="sX24ufkYhEEFfUaHDxLW-40">
+          <mxGeometry y="320" width="220" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="sX24ufkYhEEFfUaHDxLW-43" value="Item 3" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="sX24ufkYhEEFfUaHDxLW-40">
+          <mxGeometry y="480" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sX24ufkYhEEFfUaHDxLW-44" value="有个问题呢，如果直接current，得不到。 那后面执行就全部是空值了。 无法执行register了就。&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;如果不为空，那就是已经生成了。&amp;nbsp; 无法再次加入进去了。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;ContainerLocator.SetContainerExtension(CreateContainerExtension()); 是一个对象，并不是一个空值。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;_containerExtension = ContainerLocator.Current;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;其实是对象里面的instance。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;这个对象应该有&amp;nbsp;RegisterRequiredTypes&amp;nbsp; 和&amp;nbsp;RegisterTypes 的能力。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;也要有Resolve的能力。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;在&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Resolve 时可能要触发构造DI才行。&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="310" y="1820" width="340" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="sX24ufkYhEEFfUaHDxLW-45" value="regionmanager倒是不影响DI" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="840" y="1880" width="340" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="sX24ufkYhEEFfUaHDxLW-46" value="PrismIocExtensions 里面的instance--其实根本没任用，--靠。&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;只有test脚本才需要用。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;那就随便写了&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="810" y="2120" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sX24ufkYhEEFfUaHDxLW-47" value="还必须要写一个scopeprovider--太烦了" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="210" y="2250" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sX24ufkYhEEFfUaHDxLW-48" value="为了链式--要强转this-----太粗暴了&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&amp;nbsp; public IContainerRegistry Register(Type from, Type to)&lt;/div&gt;&lt;div&gt;&amp;nbsp; {&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;Services.AddTransient(from, to);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;return (IContainerRegistry)this;&lt;/div&gt;&lt;div&gt;&amp;nbsp; }&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="330" y="2130" width="340" height="250" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
