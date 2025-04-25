@@ -1,0 +1,77 @@
+﻿
+
+
+先说缺陷--因为prism的同时继承2个接口的操作，而di自身的build只能一次。 不能在build后再进入register。所以使用时请注意，虽然
+有register方法，但是只能在startup位置用，一次初始化完成。 不要在外部使用。
+
+
+
+
+
+__________________
+
+
+入口1：PrismIocExtensions
+其实就是对Prism.Container.Abstractions--也就是Prism.Ioc的
+ IContainerRegistry--做注入
+ IContainerProvider--做解析
+
+
+ 就是将解析的、注入的再次封装入Prism.Container.Abstractions的规范下。
+ 但是这里返回的是IServiceProvider.容器对象
+
+ 所以下面需要写具体的IServiceProvider的容器对象的provider
+
+
+
+ 入口2: 因为接口IContainerExtension必须实现。 所以这里做了实现。
+
+   public class DIContainerExtension :
+    IContainerExtension<IContainer>,
+    IContainerExtension,
+    IContainerProvider,
+    IContainerRegistry,
+    IContainerInfo,
+    IServiceCollectionAware
+
+
+    其实原本可以Prsim直接使用微软的接口。 
+    但是Prism的开发者偏偏使用DryIoc--可能是相同作者。 导致最开始是我增加容器嵌套实现的DI。
+    现在9.0Prism的开发者，为了适配多个IOC，站在自己的立场上，硬性加了抽象层，方便Prism内部的代码调用。
+     导致DryIOC、Unity、微软的DI都要在他的 抽象层做实现层。而实现层下面又实现了原本DI的使用代码。形成了3层嵌套。
+     中间偶尔他的抽象层还引用微软的接口，DI自己也使用微软的接口，导致第一层和第三层看上去怪怪的。
+     
+
+
+
+
+
+可以根据需要，再扩展  IContainerInfo,
+    IServiceCollectionAware接口--实现更多功能。
+
+
+
+    入口3: 在入口2的是实现中需要提供provider
+    DryIocScopedProvider
+
+
+
+    主要是这3个类。 其他的都是根据需要来写的。
+
+
+
+
+    ————————————————————————————
+
+    按照官方的说法：
+    https://docs.prismlibrary.com/docs/dependency-injection/index.html
+    核心是3个类：
+    PrismApplication 用于检索底层容器  \PrismBootstrapper  用于检索底层容器
+    DIContainerExtension 是IContainerExtension的是实现类
+    PrismIocExtensions  是扩展类
+
+
+    ——
+
+       //PrismApplicationBase父类中的 Initialize() 方法中第一行就是将IContainerExtension 放入到ContainerLocator中。
+        //ContainerLocator.SetContainerExtension(CreateContainerExtension());

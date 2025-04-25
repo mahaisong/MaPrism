@@ -1,0 +1,36 @@
+﻿入口1：PrismIocExtensions
+其实就是对Prism.Container.Abstractions--也就是Prism.Ioc的
+ IContainerRegistry--做注入
+ IContainerProvider--做解析
+
+
+ 就是将解析的、注入的再次封装入Prism.Container.Abstractions的规范下。
+ 但是这里返回的是DryIoc.容器对象
+
+ 所以下面需要写具体的DryIoc的容器对象的provider
+
+
+
+ 入口2: 因为接口IContainerExtension必须实现。 所以这里做了实现。
+
+  public class DryIocContainerExtension : 
+    IContainerExtension<IContainer>,
+    IContainerExtension,
+    IContainerProvider,
+    IContainerRegistry,
+    IContainerInfo,
+    IServiceCollectionAware
+  {
+
+可以根据需要，再扩展  IContainerInfo,
+    IServiceCollectionAware接口--实现更多功能。
+
+
+
+    入口3: 在入口2的是实现中需要提供provider
+    DryIocScopedProvider
+
+
+
+    主要是这3个类。 其他的都是根据需要来写的。
+

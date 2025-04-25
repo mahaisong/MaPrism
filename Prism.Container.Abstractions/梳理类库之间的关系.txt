@@ -1,0 +1,21 @@
+﻿入口：IContainerExtension
+
+接口：IContainerExtension : IContainerProvider, IContainerRegistry
+接口： interface IContainerExtension<TContainer> : 
+    IContainerExtension,
+    IContainerProvider,
+    IContainerRegistry
+
+ 所以IContainerProvider 、IContainerRegistry是重点接口
+ IContainerRegistry--做注入
+ IContainerProvider--做解析
+
+
+
+ 入口2：MicrosoftDependencyInjectionExtensions
+ 当IContainerExtension是IServiceCollectionAware的时候。 放入IServiceCollection
+
+ 这类只是个转接口！
+
+
+

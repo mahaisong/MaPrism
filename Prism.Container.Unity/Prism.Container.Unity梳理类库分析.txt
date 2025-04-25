@@ -1,0 +1,27 @@
+﻿入口1：PrismIocExtensions
+其实就是对Prism.Container.Abstractions--也就是Prism.Ioc的
+ IContainerRegistry--做注入
+ IContainerProvider--做解析
+
+
+ 就是将解析的、注入的再次封装入Prism.Container.Abstractions的规范下。
+
+
+
+ 入口2: 因为接口IContainerExtension必须实现。 所以这里做了实现。
+
+ UnityContainerExtension : 
+    IContainerExtension<IUnityContainer>,
+    IContainerExtension,
+    IContainerProvider,
+    IContainerRegistry,
+    IContainerInfo
+
+
+可以根据需要，再扩展  IContainerInfo,
+    IServiceCollectionAware接口--实现更多功能。
+
+
+
+    入口3: 在入口2的是实现中需要提供provider
+    UnityScopedProvider

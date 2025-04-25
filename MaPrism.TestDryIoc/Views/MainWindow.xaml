@@ -1,0 +1,29 @@
+﻿<Window x:Class="MaPrism.TestDryIoc.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MaPrism.TestDryIoc.Views"
+        
+           xmlns:prism="http://prismlibrary.com/"
+   prism:ViewModelLocator.AutoWireViewModel="True"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100" ></RowDefinition>
+            <RowDefinition Height="Auto" MinHeight="200"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Button Grid.Row="0"  Content="按我" HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Command="{Binding TestCommand}"
+            
+            />
+        <ContentControl  Grid.Row="1" 
+   x:Name="titleControl" 
+   prism:RegionManager.RegionName="TestRegion"
+   DockPanel.Dock="Top"   />
+
+    </Grid> 
+</Window>

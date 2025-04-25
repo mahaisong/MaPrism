@@ -1,0 +1,67 @@
+﻿
+定期进行Base基础库的 结构优化
+
+——————————————————————————————————
+本次开发，全部使用net9.0类库。 如有引用8.0等语法类库一律升级
+
+针对Prism部分，完全采用100%源码式开发。
+1.为了升级Prism 9.0---使用Prism框架的功能
+2.为了防止贸易战带来的nuget包、github被禁用等问题。【其他类库国内有镜像替代】
+3.方便外贸改造----后面一键替换Prism标记----避开lincence审查
+只有个Commercial Plus 许可证 商业盈利的许可证，才会提供对Microsoft.Extensions.DependencyInjection容器的支持。
+我们自己写一套Microsoft.Extensions.DependencyInjection容器，属于基于自有技术。
+
+———————公开主库结构———————————————————————
+
+主库是2个构成--一个是工具库Prism.Event 一个是Prism.Core库
+
+Prism.Event---负责发布订阅类
+Prism.Core---核心类：
+    会引用Prism.Container.Abstractions遵循统一DI规范。
+    会引用Prism.Event工具类，做对话框、Commands和MVVM封装、导航[区域管理]
+    
+———————Prism未公开的库--反编译———————————————————
+
+Prism.Container.Abstractions
+遵循 微软规范 Microsoft.Extensions.DependencyInjection.Abstractions  8.0.1
+---这里本地改为引用10.0.0，保证对于NET9.0的适配，而不是NET8.0来兼容9.0
+
+主要功能--做一个Prism.IOC命名空间的转接口---》 
+同时内部包含了部分MicrosoftDependencyInjectionExtensions---这里可能涉及私有化改造
+
+—————————Prism未公开的库--反编译—————————————————
+
+Prism.Container.DryIoc
+引用了上面的Prism.Container.Abstractions 库， 
+引用了DryIoc.dll 5.4.3库
+
+反编译后有一些运行时字符--无法编译通过---暂时搁置---为使用DI做准备
+
+——自制类库（未完成）————————————————————————————
+
+Prism.Container.DI
+引用官方开源的Microsoft.Extensions.DependencyInjection的实现。本地改为引用10.0.0
+要不是Prism.Core引用Prism.Container.Abstraction，根本不需要饶这一个圈子。
+参考DryIoc进行DI改造。
+
+———Prism.Wpf—————————————————————
+引用Microsoft.Xaml.Behaviors.Wpf做事件行为处理--鼠标、键盘--原本是1.0.0--改为1.1.135
+引用PolySharp--自动升级语言特性--指向多个版本8.0、9.0--这里去掉，统一9.0
+
+删除DirectoryModuleCatalog.net45
+保留DirectoryModuleCatalog.netcore
+
+——自制类库（未完成）——————————————————
+
+Prism.DI.Wpf引用自制的Prism.Container.DI类库，引用Prism.Wpf类库。
+
+————
+
+
+
+
+
+
+
+
+

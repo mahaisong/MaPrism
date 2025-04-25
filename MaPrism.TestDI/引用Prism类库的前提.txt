@@ -1,0 +1,94 @@
+﻿注意：
+Psrim的源代码的各个类库下面，特别是WPF的类库
+在WPF类库的Properties/AssemblyInfo.cs文件中生成[assembly: XmlnsDefinition]属性都有严格的引用定义
+包括资源Resources和设置Settings也有限定。
+
+1.如果需要引用或者使用Psrim的类，在xaml中引用此类库时，需要采用源代码的AssemblyInfo.cs中声明命名空间和前缀
+[assembly: XmlnsDefinition("http://prismlibrary.com/", "Prism.Navigation.Regions")]
+
+ 
+ 2.根据需要，设置  
+ <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  <InternalsVisibleTo>YourInternalsVisibleToName</InternalsVisibleTo>
+
+
+
+
+  ————————————————————
+
+  
+怀疑是unity的DependencyOverride 临时解析出来的一个。
+
+DI的功能确实太单一了。 构造完成后，不能覆盖和增加
+
+
+所以， 只能使用unity这种--作为主框架。
+而DI作为单一的嵌入功能--而且是部分功能。 主框架依然是使用unity的情况下。
+
+DI不能单独作为主框架。
+
+
+非常麻烦的是， 即使采用了手动注入的方式也不行。 因为SelectorRegionAdapter 的构造函数是其他依赖。
+如果使用时必须提前resolve。 导致所有的都固化。
+但是后面有其他的adapter，将无法再次注入。
+
+
+因为RegionBehaviorFactory 还没有注入
+最狠的其实是
+Unable to resolve service for type 'Prism.Ioc.IContainerExtension' while attempting to activate 'Prism.Navigation.Regions.RegionBehaviorFactory
+
+在RegionBehaviorFactory 里面的构造函数是IContainerExtension 整个自己本身。
+public RegionBehaviorFactory(IContainerExtension container)
+{
+    _container = container;
+}
+
+IContainerExtension 不可能注入的。 因为自己注入自己，太怪了。
+
+
+这个写法，决定了。 无法通过注入放进来。IContainerProvider
+
+
+太奇怪了。 --直接走备份吧。
+————————————————————————————、
+
+
+
+最终优化之后，还是遇到Unable to resolve service for type 'Prism.Ioc.IContainerExtension' while attempting to activate 'Prism.Navigation.Regions.RegionBehaviorFactory'.”
+
+这个根底部的问题。 
+
+C:\Users\mahai\.nuget\packages\unity.container\5.11.11\
+
+
+——
+既然无法使用原生的。 
+
+那使用unity 还是 dryioc 就无所谓了。
+
+这么使用起来有旧方案的，是unity
+
+有dryioc的是 新方案DryIoc.Microsoft.DependencyInjection;
+
+
+dryioc的效率可能高。
+但是赶上了升级，源码和nuget的版本对不上。 反编译有问题。  
+
+一个问题就能卡半天。
+
+以lamada反编译的功底+ai分析，慢慢靠拢，最终直接写lamada表达式解决
+
+
+——
+
+或者也有Unity.Microsoft.DependencyInjection库
+基于Unity.Container  的
+
+Maksim Volkau
+
+————
+
+
+全部废掉DI部分。 最后走DryIoc部分。
+
+需要DI的，直接嵌入Adpter适配器。

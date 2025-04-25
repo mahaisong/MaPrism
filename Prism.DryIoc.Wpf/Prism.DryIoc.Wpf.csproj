@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Prism.Container.DryIoc\Prism.Container.DryIoc.csproj" />
+    <ProjectReference Include="..\Prism.Wpf\Prism.Wpf.csproj" />
+  </ItemGroup>
+
+</Project>
+
+
+
+
+<!--[assembly: XmlnsDefinition("http://prismlibrary.com/", "Prism.DryIoc")]
+	  [assembly: InternalsVisibleTo("Prism.DryIoc.Wpf.Tests, PublicKey=00240000048000009400000006020000002400005253413100040000010001008f34b619d7a39e44cebe5ccbd5607eaa0784c9c124431ba336a14e4fecd874f151b57163961505e76943910c7cabea9c7229edc3553dfc33ac7b269087e5cef9404bdb491907ffd9f9b26d737fa2c359620a2cbf2802f54118471d7c0ead3b95c916783dd4b99b9b1a0cd2785e1b5d614d3d9140a60c8c64c217e1c2b0ec8296")]
+	  [assembly: AssemblyCompany("Brian Lagunas;Dan Siegel")]
+	  [assembly: AssemblyConfiguration("Release")]
+	  [assembly: AssemblyDescription("Use these extensions to build Prism applications based on DryIoc.")]
+	  [assembly: AssemblyProduct("Prism.DryIoc.Wpf (net6.0-windows)")]
+	  [assembly: AssemblyTitle("Prism.DryIoc.Wpf")]
+	  [assembly: AssemblyMetadata("RepositoryUrl", "https://github.com/PrismLibrary/Prism")]-->

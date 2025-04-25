@@ -1,0 +1,6 @@
+﻿提供PrismApplication
+
+提供PrismBootstrapperBase
+
+作为抽象类--后面给实际wpf类做使用。
+

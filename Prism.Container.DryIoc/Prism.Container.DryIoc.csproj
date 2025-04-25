@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net9.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<UseWPF>true</UseWPF>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<RootNamespace>Prism.Container.DryIoc</RootNamespace>
+
+
+		<AssemblyName>Prism.Container.DryIoc</AssemblyName>
+
+		<RootNamespace>Prism.Container.DryIoc</RootNamespace>
+
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\DryIoc\DryIoc.csproj" />
+		<ProjectReference Include="..\Prism.Container.Abstractions\Prism.Container.Abstractions.csproj" />
+	</ItemGroup>
+
+</Project>
